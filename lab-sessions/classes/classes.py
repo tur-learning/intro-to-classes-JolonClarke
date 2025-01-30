@@ -17,7 +17,7 @@ class Chip:
     def __init__(self, flavor, texture, size, brand):
         self.flavor = flavor
         self.texture = texture
-        self.size = size #cm
+        self.size = size # in cm
         self.brand = brand
 
     def info(self):
@@ -27,5 +27,5 @@ class Chip:
         self.brand = new_brand
     
     def chips_length(self): # how many centimeters if all chips in a bag are laid in a line
-        bag_length = self.size * 24
+        bag_length = self.size * 24 # the median number of chips per bag, according to Google
         print(str(bag_length) + " cm")
